@@ -1,0 +1,14 @@
+pipeline {
+    agent {
+      label 'WinDev'
+    }
+
+    stages {
+        stage('ChangeDirectory') {
+            steps {
+        
+                bat 'echo "hello world999" > "c:\\repo\\myproject\\test.txt"' 
+            }
+        }
+    }
+}
